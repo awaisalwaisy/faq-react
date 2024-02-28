@@ -1,14 +1,13 @@
-import { HeyDev } from "@/components";
-import { Button } from "@nextui-org/react";
-import { Link } from "react-router-dom";
+import Faq from "@/components/Faq";
+import { questionList } from "@/data";
 
 const Home = () => {
   return (
     <main className="page">
-      <Link to="/about">
-        <Button color="primary">About</Button>
-      </Link>
-      <HeyDev />
+      <h1 className="text-4xl font-semibold text-center mb-16">
+        Frequently Asked Questions
+      </h1>
+      <Faq data={questionList} />
     </main>
   );
 };
